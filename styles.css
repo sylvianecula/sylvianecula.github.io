@@ -4,16 +4,17 @@
 }
 
 body {
-  font-family: "Helvetica";
+  font-family: "futura-pt";
   font-size: 18px;
 }
 
 header {
   color: white;
   background-image: url(http://atdc.org/wp-content/uploads/original.jpeg);
-  background-size: contain
+  background-size: cover;
+  background-position: 50% 50%;
   text-align: center;
-  height: 40%;
+  height: 80%;
 
   display: flex;
   align-items: center;
@@ -22,8 +23,37 @@ header {
 }
 
 header h1 {
-  font-family: "HelveticaNeue-CondensedBlack";
+  font-family: "futura-pt";
   font-size: 4em;
+  padding-top: 250px;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  list-style-type: none;
+}
+
+.navbar li {
+  display: inline-block;
+   font-family: "futura-pt";
+   font-size: 24px;
+   font-weight: 500;
+   padding: 7px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.active a {
+  
 }
 
 .tagline {
@@ -51,7 +81,7 @@ header h1 {
   font-size: 1.2em;
   width: 35px;
   height: 35px;
-  color: #4A90E2;
+  color: #277D18;
   text-decoration: none;
 
   display: inline-flex;
@@ -86,6 +116,7 @@ header h1 {
   padding: 10px;
   margin-right: 20px;
   flex-grow: 1;
+  min-width: 200px;
 }
 
 .col:last-child {
@@ -116,7 +147,7 @@ header h1 {
   margin-right: 10px;
 }
 
-@media (max-width: 670px) {
+@media (max-width: 750px) {
   .row {
     flex-direction: column;
   }
@@ -124,4 +155,17 @@ header h1 {
   .col {
     margin-right: 0;
   }
+}
+
+#experience {
+  background-image: url("");
+}
+
+#aboutme {
+  background-image: url("DSC_7634 copy.JPG");
+  background-size: cover;
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+  background-position: 90% 50%;
 }
