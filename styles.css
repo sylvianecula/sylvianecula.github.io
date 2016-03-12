@@ -11,6 +11,7 @@ body {
 header {
   color: white;
   background-image: url(http://atdc.org/wp-content/uploads/original.jpeg);
+  background-size: contain
   text-align: center;
   height: 40%;
 
